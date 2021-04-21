@@ -1,0 +1,32 @@
+package:
+  name: image_classification_helper
+  version: 0.0.2
+source:
+  sha256: 19ec461f468b8d06787076e074a540adc35fab32b374bcb4a2de31eabfc339d0
+  url: https://files.pythonhosted.org/packages/75/20/d6d1a65ed8df5108032466624f247d9297e1c4f9b90603167cd76a7204ef/image_classification_helper-0.0.2.tar.gz
+about:
+  dev_url: https://wshuyi.github.io
+  doc_url: https://wshuyi.github.io
+  home: https://wshuyi.github.io
+  license: Apache Software
+  license_family: APACHE
+  summary: Image Classification Helper for class demo
+build:
+  noarch: python
+  number: '0'
+  script: '{{ PYTHON }} -m pip install . -vv'
+extra:
+  recipe-maintainers:
+  - wshuyi
+requirements:
+  host:
+  - pip
+  - python
+  - packaging
+  run:
+  - pip
+  - python
+  - packaging
+test:
+  imports:
+  - image_classification_helper
